@@ -1,0 +1,60 @@
+🐧 Linux Basics Cheat Sheet
+
+1. File System Navigation
+- pwd → Print current working directory
+- ls → List files
+  - ls -a → Show hidden files
+  - ls -l → Detailed list (permissions, owner, size)
+  - ls -la → Both hidden + detailed
+- cd <path> → Change directory
+  - cd .. → Move up one level
+  - cd ~ → Go to home directory
+  - cd / → Go to root directory
+
+2. File & Directory Management
+- touch file.txt → Create empty file
+- cat file.txt → Show file contents
+- mkdir new_folder → Create directory
+- rm file.txt → Remove file
+- rmdir folder → Remove empty folder
+- rm -r folder → Remove folder + contents
+
+3. Permissions
+- ls -l → Show file permissions (e.g., -rw-r--r--)
+- chmod 755 file.sh → Change permissions (r=read, w=write, x=execute)
+- chown user:group file.txt → Change file owner
+
+4. Users & Groups
+- whoami → Show current user
+- id → Show user & group IDs
+- adduser newuser → Add a new user
+- passwd newuser → Set/change password
+
+5. Processes
+- ps → Show running processes
+- top → Live process monitoring
+- kill <PID> → Kill process by ID
+- jobs → Show background jobs
+- command & → Run process in background
+
+6. Networking
+- ping google.com → Test connectivity
+- curl http://example.com → Fetch URL data
+- wget http://example.com/file.zip → Download file
+- ssh user@server_ip → Connect to remote server
+- scp file.txt user@server:/path → Copy file via SSH
+
+7. Help & Manuals
+- man <command> → Manual for a command
+- command --help → Quick help for a command
+- history → Show previously used commands
+- !<number> → Run command from history
+
+✅ Tip: Use Tab for auto-complete, Ctrl+R to search command history.
+
+How to Use This Repo
+1. Save this as linux-cheatsheet.txt
+2. Push to your GitHub repo with:
+   git add linux-cheatsheet.txt
+   git commit -m "Added Linux Basics Cheat Sheet"
+   git push origin main
